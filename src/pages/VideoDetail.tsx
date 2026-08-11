@@ -36,7 +36,9 @@ export default function VideoDetail() {
               
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-slate-700"></div>
+                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                    <img src="https://i.pravatar.cc/150?u=author" alt="Author avatar" className="w-full h-full object-cover" />
+                  </div>
                   <div>
                     <h3 className="font-bold text-white">{video.author}</h3>
                     <p className="text-sm text-slate-400">1.2M Đăng ký</p>
@@ -80,7 +82,9 @@ export default function VideoDetail() {
                </div>
                
                <div className="flex items-start gap-4 mb-8">
-                 <div className="w-10 h-10 rounded-full bg-slate-700 flex-shrink-0"></div>
+                 <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+                    <img src="https://i.pravatar.cc/150?u=current_user" alt="Your avatar" className="w-full h-full object-cover" />
+                 </div>
                  <div className="flex-1">
                    <textarea placeholder="Viết bình luận..." className="w-full bg-transparent border-b border-white/5 py-2 text-white focus:border-purple-500 focus:outline-none resize-none h-10 transition-colors"></textarea>
                  </div>
@@ -89,7 +93,9 @@ export default function VideoDetail() {
                <div className="flex flex-col gap-6">
                  {[1,2,3,4,5].map(i => (
                    <div key={i} className="flex items-start gap-3">
-                     <div className="w-10 h-10 rounded-full bg-slate-700 flex-shrink-0"></div>
+                     <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+                        <img src={`https://i.pravatar.cc/150?u=user${i}`} alt={`User avatar`} className="w-full h-full object-cover" />
+                     </div>
                      <div>
                        <div className="flex items-center gap-2 mb-1">
                          <span className="font-bold text-sm text-white">@user_{i}99</span>

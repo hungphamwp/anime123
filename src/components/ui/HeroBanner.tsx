@@ -8,7 +8,7 @@ export default function HeroBanner() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1606214580210-90c749021703?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1542316492-e7f0607ce778?w=1920&q=80"
             alt="One Piece Hero"
             className="h-full w-full object-cover"
           />

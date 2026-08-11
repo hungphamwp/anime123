@@ -74,7 +74,9 @@ export default function NewsDetail() {
               </div>
               
               <div className="flex items-start gap-4 mb-8">
-                <div className="w-12 h-12 rounded-full bg-slate-700 flex-shrink-0"></div>
+                <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                  <img src="https://i.pravatar.cc/150?u=news_user" alt="Your avatar" className="w-full h-full object-cover" />
+                </div>
                 <div className="flex-1">
                   <textarea placeholder="Viết bình luận của bạn..." className="w-full bg-[#16161a] border border-white/5 rounded-2xl p-4 text-white focus:border-purple-500 focus:outline-none resize-none h-24"></textarea>
                   <div className="flex justify-end mt-3">

@@ -73,8 +73,8 @@ export default function AdminPreview() {
               <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-red-500 rounded-full border-2 border-[#1a1d2d]"></span>
             </button>
             <div className="flex items-center gap-2 border-l border-white/5 pl-4">
-              <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-sm">
-                A
+              <div className="w-8 h-8 rounded-full overflow-hidden flex items-center justify-center">
+                <img src="https://i.pravatar.cc/150?u=admin_user" alt="Admin" className="w-full h-full object-cover" />
               </div>
               <span className="text-sm font-medium text-white">Admin User</span>
             </div>

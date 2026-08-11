@@ -106,7 +106,9 @@ export default function AnimeWatch() {
                </div>
                
                <div className="flex items-start gap-3 mb-6">
-                 <div className="w-10 h-10 rounded-full bg-slate-700 flex-shrink-0"></div>
+                 <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
+                    <img src="https://i.pravatar.cc/150?u=current_user_anime" alt="Your avatar" className="w-full h-full object-cover" />
+                 </div>
                  <div className="flex-1">
                    <textarea placeholder="Thêm bình luận..." className="w-full bg-[#050507] border border-white/5 rounded-lg p-3 text-sm text-white focus:border-emerald-500 focus:outline-none resize-none h-20"></textarea>
                    <div className="flex justify-end mt-2">
@@ -118,7 +120,9 @@ export default function AnimeWatch() {
                <div className="flex flex-col gap-4">
                  {[1,2,3].map(i => (
                    <div key={i} className="flex items-start gap-3">
-                     <div className="w-8 h-8 rounded-full bg-slate-700 flex-shrink-0"></div>
+                     <div className="w-8 h-8 rounded-full overflow-hidden flex-shrink-0">
+                        <img src={`https://i.pravatar.cc/150?u=anime_user${i}`} alt={`User avatar`} className="w-full h-full object-cover" />
+                     </div>
                      <div>
                        <div className="flex items-center gap-2 mb-1">
                          <span className="font-medium text-sm text-white">User{i}99</span>

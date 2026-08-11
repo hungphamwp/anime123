@@ -7,10 +7,14 @@ export default function MangaReader() {
   const manga = mockMangas.find(m => m.slug === slug) || mockMangas[0];
   const currentChapter = parseInt(chapter || '1');
 
-  // Mock chapter images (using placeholders)
-  const images = Array.from({ length: 5 }, (_, i) => 
-    `https://images.unsplash.com/photo-1626278664285-f796b9ee7806?w=1000&q=80&random=${i}`
-  );
+  // Mock chapter images
+  const images = [
+    'https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1000&q=80',
+    'https://images.unsplash.com/photo-1528164311546-a4c6a61763a8?w=1000&q=80',
+    'https://images.unsplash.com/photo-1541562232579-512a21360020?w=1000&q=80',
+    'https://images.unsplash.com/photo-1551465223-9ee82b6833b7?w=1000&q=80',
+    'https://images.unsplash.com/photo-1542316492-e7f0607ce778?w=1000&q=80'
+  ];
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-slate-300">
